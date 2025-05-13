@@ -3,7 +3,6 @@
 [![PyPI version](https://img.shields.io/pypi/v/chainfl.svg)](https://pypi.org/project/chainfl/)
 [![Python](https://img.shields.io/pypi/pyversions/chainfl.svg)](https://pypi.org/project/chainfl/)
 [![License](https://img.shields.io/github/license/tymmill/chainfl)](LICENSE)
-[![Tests](https://github.com/tymmill/chainfl/actions/workflows/tests.yml/badge.svg)](https://github.com/tymmill/chainfl/actions)
 [![Code Style](https://img.shields.io/badge/code%20style-black-black)](https://github.com/psf/black)
 
 
