@@ -5,6 +5,7 @@
 [![Python](https://img.shields.io/pypi/pyversions/chainfl.svg)](https://pypi.org/project/chainfl/)
 [![License](https://img.shields.io/github/license/tymmill/chainfl)](LICENSE)
 [![Code Style](https://img.shields.io/badge/code%20style-black-black)](https://github.com/psf/black)
+[![Downloads](https://static.pepy.tech/badge/chainfl)](https://pepy.tech/project/chainfl)
 
 
 **ChainFL** is a modular simulation framework for Federated Learning with blockchain-based trust and model integrity mechanisms. Designed for experimentation, research, and education in secure and decentralized AI.
