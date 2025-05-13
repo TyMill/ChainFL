@@ -1,6 +1,7 @@
 # ChainFL
 
 [![PyPI version](https://img.shields.io/pypi/v/chainfl.svg)](https://pypi.org/project/chainfl/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15399944.svg)](https://doi.org/10.5281/zenodo.15399944)
 [![Python](https://img.shields.io/pypi/pyversions/chainfl.svg)](https://pypi.org/project/chainfl/)
 [![License](https://img.shields.io/github/license/tymmill/chainfl)](LICENSE)
 [![Code Style](https://img.shields.io/badge/code%20style-black-black)](https://github.com/psf/black)
