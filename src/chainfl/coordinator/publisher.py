@@ -1,4 +1,4 @@
-from chainfl.blockchain.model_hasher import ModelHasher
+from chainfl.agent import ModelHasher
 
 class GlobalPublisher:
     """
