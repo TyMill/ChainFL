@@ -1,0 +1,33 @@
+# config/default.yaml
+
+experiment:
+  name: "chainfl_simulation_run_001"
+  description: "Federated Learning with blockchain validation using PBFT."
+  rounds: 5
+  agents: 5
+  agent_sample_ratio: 0.6
+  scheduler_mode: "random"  # options: "full", "random", "round_robin"
+
+data:
+  type: "synthetic_classification"
+  n_features: 10
+  n_samples_per_agent: 100
+  n_classes: 2
+  class_sep: 1.0
+  random_seed: 42
+
+model:
+  type: "logistic_regression"
+  solver: "lbfgs"
+  max_iter: 1000
+
+blockchain:
+  consensus: "PBFT"
+  num_nodes: 5
+  fault_tolerance: 1
+
+logging:
+  output_dir: "logs/"
+  log_metrics: true
+  log_json: true
+  log_stdout: true
