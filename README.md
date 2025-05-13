@@ -5,6 +5,7 @@
 [![Python](https://img.shields.io/pypi/pyversions/chainfl.svg)](https://pypi.org/project/chainfl/)
 [![License](https://img.shields.io/github/license/tymmill/chainfl)](LICENSE)
 [![Code Style](https://img.shields.io/badge/code%20style-black-black)](https://github.com/psf/black)
+[![Tests](https://github.com/tymmill/chainfl/actions/workflows/tests.yml/badge.svg)](https://github.com/tymmill/chainfl/actions)
 [![Downloads](https://static.pepy.tech/badge/chainfl)](https://pepy.tech/project/chainfl)
 
 
