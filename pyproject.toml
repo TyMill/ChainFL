@@ -2,7 +2,7 @@
 name = "chainfl"
 version = "0.1.0"
 description = "Federated Learning + Blockchain Simulation Framework"
-authors = ["Tymoteusz Miller <tymoteusz@example.com>"]
+authors = ["Tymoteusz Miller"]
 license = "MIT"
 
 [tool.poetry.dependencies]
