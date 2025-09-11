@@ -4,7 +4,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15399944.svg)](https://doi.org/10.5281/zenodo.15399944)
 [![Python](https://img.shields.io/pypi/pyversions/chainfl.svg)](https://pypi.org/project/chainfl/)
 [![License](https://img.shields.io/github/license/tymill/chainfl)](LICENSE)
-[![Docs](https://img.shields.io/badge/docs-online-blue.svg)](https://tymmill.github.io/ChainFl/)
+[![Docs](https://img.shields.io/badge/docs-online-blue.svg)](https://tymill.github.io/ChainFl/)
 [![Code Style](https://img.shields.io/badge/code%20style-black-black)](https://github.com/psf/black)
 [![Downloads](https://static.pepy.tech/badge/chainfl)](https://pepy.tech/project/chainfl)
 
