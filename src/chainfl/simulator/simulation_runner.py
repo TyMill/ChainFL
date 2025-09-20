@@ -3,7 +3,7 @@ class SimulationRunner:
     Runs the ChainFL simulation loop across multiple federated agents.
     """
 
-    def __init__(self, agents, coordinator, blockchain, rounds=5):
+    def __init__(self, agents, coordinator, blockchain, rounds=5, scheduler=None):
         """
         Initializes the simulation environment.
 
@@ -12,12 +12,15 @@ class SimulationRunner:
             coordinator (object): Central aggregation and publishing manager.
             blockchain (BlockchainSimulator): Ledger instance.
             rounds (int): Number of federated training rounds.
+            scheduler (Scheduler, optional): Strategy that selects
+                participating agents per round.
         """
         self.agents = agents
         self.coordinator = coordinator
         self.blockchain = blockchain
         self.rounds = rounds
         self.logs = []
+        self.scheduler = scheduler
 
     def run(self):
         """
@@ -27,7 +30,13 @@ class SimulationRunner:
             print(f"\n🔄 Round {r+1} ------------------")
             round_models = []
 
-            for agent in self.agents:
+            participants = (
+                self.scheduler.select_agents(self.agents, r)
+                if self.scheduler
+                else self.agents
+            )
+
+            for agent in participants:
                 # Local training
                 X, y = agent.load_data()
                 agent.trainer.train(X, y)

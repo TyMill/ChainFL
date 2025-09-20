@@ -70,9 +70,9 @@ def main():
         agents=agents,
         coordinator=coordinator,
         blockchain=blockchain,
-        rounds=config['experiment']['rounds']
+        rounds=config['experiment']['rounds'],
+        scheduler=scheduler,
     )
-    runner.scheduler = scheduler  # inject if needed
     runner.run()
 
     # Show blockchain
