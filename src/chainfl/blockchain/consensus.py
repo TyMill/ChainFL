@@ -2,15 +2,23 @@ import random
 import time
 
 class ConsensusEngine:
-    def __init__(self, mechanism="PBFT", num_nodes=5, fault_tolerance=1):
+    def __init__(
+        self,
+        mechanism="PBFT",
+        num_nodes=5,
+        fault_tolerance=1,
+        fault_probability=0.0,
+    ):
         """
         :param mechanism: consensus algorithm (currently only PBFT simulated)
         :param num_nodes: number of simulated validators
         :param fault_tolerance: max number of faulty nodes allowed
+        :param fault_probability: probability that a node behaves faultily
         """
         self.mechanism = mechanism
         self.num_nodes = num_nodes
         self.fault_tolerance = fault_tolerance
+        self.fault_probability = fault_probability
         self.quorum = self.num_nodes - self.fault_tolerance
 
     def validate_block(self, block_data: dict) -> bool:
@@ -22,7 +30,7 @@ class ConsensusEngine:
 
         for i in range(self.num_nodes):
             # Optional logic for faulty node behavior
-            if random.random() < 0.05:  # 5% chance node fails
+            if random.random() < self.fault_probability:
                 votes.append(False)
             else:
                 votes.append(self.simulate_node_validation(block_data))
