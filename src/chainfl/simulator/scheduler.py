@@ -39,7 +39,7 @@ class Scheduler:
         elif self.mode == "round_robin":
             k = max(1, int(len(agents) * self.sample_ratio))
             start = (current_round * k) % len(agents)
-            return agents[start:start + k]
+            return [agents[(start + offset) % len(agents)] for offset in range(k)]
 
         else:
             raise ValueError(f"Unknown scheduling mode: {self.mode}")
