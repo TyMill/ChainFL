@@ -20,7 +20,8 @@ class Agent:
         self.consensus = ConsensusEngine(
             mechanism=config['blockchain']['consensus'],
             num_nodes=config['blockchain']['num_nodes'],
-            fault_tolerance=config['blockchain']['fault_tolerance']
+            fault_tolerance=config['blockchain']['fault_tolerance'],
+            fault_probability=config['blockchain']['fault_probability']
         )
 
     def _generate_data(self):

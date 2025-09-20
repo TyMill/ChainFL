@@ -25,6 +25,7 @@ blockchain:
   consensus: "PBFT"
   num_nodes: 5
   fault_tolerance: 1
+  fault_probability: 0.05
 
 logging:
   output_dir: "logs/"
